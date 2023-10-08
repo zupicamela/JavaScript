@@ -1,0 +1,33 @@
+.wrapper{
+    display: flex;
+    /* justify-content: center;
+    background-color: blue;
+    border: 1px;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row; */
+    gap: 30px;
+}
+.div1{
+    background-color: pink;
+    width: 300px;
+    height: 300px;
+    flex-shrink: 2px;
+}
+.div2{
+    background-color: rgb(43, 212, 43);
+    width: 300px;
+    height: 300px;
+}
+.div3{
+    background-color: violet;
+    width: 300px;
+    height: 300px;
+}
+
+.div1,
+.div2,
+.div3 {
+    margin: 43px;
+    padding: 52px;
+}

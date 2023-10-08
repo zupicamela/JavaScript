@@ -1,0 +1,21 @@
+        .myDiv {
+            text-align: center;
+            color: blue;
+            background-color: rgb(218, 156, 156);
+            border: 3px groove violet;
+        }
+        .myDiv2 {
+            color: rgb(210, 12, 228);
+            text-align: center;
+            background-color: rgb(231, 231, 193);
+            border: 2px solid blue ;
+        }
+
+        .myDiv3 {
+            columns: rgb(208, 223, 134);
+            text-align: center;
+            background-color: rgb(39, 217, 158);
+            border: 2px dotted rgb(255, 4, 24);
+        }
+
+        

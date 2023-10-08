@@ -1,0 +1,14 @@
+.myDiv {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+.myDiv2 {
+  background-color: blue;
+  width: 200px;
+  border: 15px solid greenyellow;
+  padding: 60px;
+  margin: 30px;
+}

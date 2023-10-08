@@ -1,0 +1,37 @@
+  :root {
+    --main-color: #ecf0f1;
+    --point-color: #555;
+    --size: 5px;
+  }
+  
+  .lala {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;  
+    
+  }
+
+  .lala1 {
+    animation: mymove .6s ease-in-out alternate .1s infinite;
+  }
+  .lala2 {
+    animation: mymove .6s ease-in-out alternate .2s infinite;
+  }
+  
+  .lala3 {
+    animation: mymove .6s ease-in-out alternate .4s infinite;
+  }
+  
+  @keyframes mymove {
+    100% { transform: scale(2); }
+  }
+
+  .lala1, .lala2, .lala3 {
+    border-radius: 100%;
+    border: var(--size) solid;
+    margin: 15px;
+  }

@@ -1,0 +1,93 @@
+.div1{
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    transition: width 1s, height 2s;
+    transition-timing-function: linear;
+}
+div:hover{
+    width: 300px;
+    height: 300px;
+}
+
+.div2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(120, 10, 224);
+    transition: width 1s, height 2s;
+    transition-timing-function: cubic-bezier(.17,.67,.7,.3);
+
+}
+
+div:hover{
+    width: 300px;
+    height: 300px;
+}
+
+.div3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: mymove 5s infinite;
+    animation-duration: 8s;}
+
+@keyframes mymove {
+0%{
+    transform: translateX(0px);
+}
+
+25%{
+    transform: translateX(200px);
+}
+50%{
+    transform: translate(200px, 200px);
+}
+75%{
+    transform: translate(0, 200px);
+}
+100%{
+    transform: translateY(-200px);
+}
+}
+
+
+.div4{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    animation: mymove 8s infinite linear;
+    position: relative;
+
+}
+@keyframes mymove {
+    0%{
+        transform:rotate(0);
+        left: 0px;
+    }
+    25%{
+        transform: rotate(15deg);
+        left: 0px;
+    }
+
+    50%{
+        
+        transform: rotate(0px);
+        left: 600px
+    }
+    75%{
+        transform: rotate(0deg) ;
+        left: 500px;
+    }
+    100%{
+        transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+
+
+
+
+
+
+

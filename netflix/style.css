@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.div1{
+    position: relative;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    filter: brightness(1);
+}
+.logo{
+    margin-left: 200px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 100;
+}
+.div2{
+    position: relative;
+}
+.div2 h1{
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:20%;
+    margin-left: 4%;
+}
+.div3{
+    position: relative;
+}
+
+.div3 p{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    width: 80%;
+    height: 200px;
+    z-index: 100;
+    margin-top: 27%;
+    margin-left: 40%;
+}
+
+.div4{
+    position: relative;
+}
+
+.div4 p{
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 80%;
+    height: 200px;
+    z-index: 100;
+    margin-top: 30%;
+    margin-left: 27%;
+}
+
+.div5{
+    margin-left: 45%;
+    margin-bottom: -50%;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    justify-content: center;
+    display: flex;
+}

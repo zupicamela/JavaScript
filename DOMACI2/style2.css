@@ -1,0 +1,50 @@
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    background-color: rgb(128, 146, 240);
+    height: 80px;
+    width: 100%;
+
+}
+
+label.logo{
+    color: rgb(249, 245, 245);
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:  0 10px;
+}
+
+nav ul li a{
+    color: rgb(252, 247, 247);
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+a:hover{
+    background: rgb(5, 132, 230);
+    transition: .5s;
+}
