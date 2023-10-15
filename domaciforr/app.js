@@ -25,7 +25,7 @@
 //     broj = a*100 + b*10 + c;
 //     let dvecifre = a*10 + c;
 
-//     if(broj% dvecifre ===0 )
+//     if(broj% dvecifre === 0 )
 //     console.log(broj)
 //     }
 // }
