@@ -85,25 +85,58 @@
 
 ////////////////////////////////6.9.////////////////////////////////////
 
-let i = 100;
-let suma = 0;
+// let i = 100;
+// let suma = 0;
 
 
-do{
-    if(i % 64 === 0){
-        suma = suma + i
-        console.log(i)
-    }
-    i ++
+// do{
+//     if(i % 64 === 0){
+//         suma = suma + i
+//         console.log(i)
+//     }
+//     i ++
    
-}
-while( i<=999)
-console.log("suma je", suma)
+// }
+// while( i<=999)
+// console.log("suma je", suma)
 
+/////////////////////////////////////////6.10.//////////////////////////////////
 
+// let m = parseInt(prompt("unesi broj m"))
+// let n = parseInt(prompt("unesi broj n"))
 
+// do{
+//     if(m<=0 || m>=10){
 
+//     }
 
+// else{
+//     if(m == Math.floor(n/10)){
+//         console.log(n)
+//     }
+//     n ++
+//   }
+// }
+// while(n>m)
 
+// drugi pokusaj:
 
+// let m = parseInt(prompt("unesi broj m"))
+// let broj ;
 
+// for ( let i = 0; i<m; i++){
+//         let n = parseFloat(prompt(`unesite ${i+1} element:`))
+//         broj = n
+// }
+
+// do{
+//     if(m<=0 || m>=10){
+//     }
+//     if(m === Math.floor(broj/10)){
+//         console.log(`${broj}`)
+//     }
+//     broj++
+//   }
+// while(broj<100)
+
+////////////////////////////////////////////////////////////////////////////

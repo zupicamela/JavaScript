@@ -189,7 +189,7 @@
 //     suma += broj
 // }
 
-// console.log(`Suma je ${suma} avrednost je: ${suma/n}`);
+// console.log(`Suma je ${suma} a vrednost je: ${suma/n}`);
 ////////////////////////////////4.6./////////////////////////////////////////////
 
 // let n = parseInt(prompt("unesi broj n:"));
