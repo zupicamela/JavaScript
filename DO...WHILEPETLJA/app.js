@@ -413,52 +413,121 @@
 // break;
 // }
 //////////////////////////////////////////////7.25./////////////////////////////////////
-let godina = parseInt(prompt("unesi godinu"))
-let mesec = parseInt(prompt("unesi mesec"))
-let dan = parseInt(prompt("unesi dan"))
-let d;
-switch(mesec){
-        case 1:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
-        d=31
-        break;
+// let godina = parseInt(prompt("unesi godinu"))
+// let mesec = parseInt(prompt("unesi mesec"))
+// let dan = parseInt(prompt("unesi dan"))
+// let d;
+// switch(mesec){
+//         case 1:
+//         case 3:
+//         case 5:
+//         case 7:
+//         case 8:
+//         case 10:
+//         case 12:
+//         d=31
+//         break;
 
-        case 4:
-        case 6:
-        case 9:
-        case 11:
-        d=30
-        break;
+//         case 4:
+//         case 6:
+//         case 9:
+//         case 11:
+//         d=30
+//         break;
 
-        case 2:
-        if((a % 4 === 0 && a % 100 != 0) || a % 400 === 0){
-        d=29
-        }
-        else {
-        d=28
+//         case 2:
+//         if((a % 4 === 0 && a % 100 != 0) || a % 400 === 0){
+//         d=29
+//         }
+//         else {
+//         d=28
+//     }
+//         break;
+// }
+// if(dan === d){
+//     dan = 1
+//     mesec ++
+// }
+// else{
+//     dan ++
+// }
+// if(mesec > 12){
+//     mesec = 1
+//     godina++
+// }
+// else{
+//     mesec++
+// }
+// console.log(dan, mesec, godina)
+//////////////////////////////////////////9.3.//////////////////////////////
+
+// function max (a, b){
+//     if (a === b) return 0;
+//     else if (a>b) return a;
+//     else return b;
+// }
+// let a = parseInt(prompt("unesi broj a"))
+// let b = parseInt(prompt("unesi broj b"))
+// let c = parseInt(prompt("unesi broj c"))
+// let d = parseInt(prompt("unesi broj d"))
+
+// let max1 = max(a, b);
+// let max2 = max (c, d);
+// console.log(max(max1, max2));
+
+////////////////////////////////////////////9.5.///////////////////////////
+// let r = parseFloat(prompt("unesi broj r"))
+
+// function Povrsina (r){
+//     let Povrsina = 4*r*r*3.14
+//     return Povrsina ;
+// }
+
+// function Zapremina (r){
+//     let Zapremina = (4/3)*r*r*r*3.14
+//     return Zapremina;
+// }
+
+/////////////////////////////////////////9.7./////////////
+
+// function ZbirKv (a, b){
+//     let suma = 0;
+//     for(let i=a; i<=b; i++ ){
+//     suma += i*i;
+//     }
+//     return suma;
+// }
+
+// function ZbirKvparnih (a, b){
+// let suma = 0;
+//     for(i=a; i<=b; i++){
+//  if(i%2 !== 0) continue
+//  suma += i*i;
+//  }
+//  return suma;
+// }
+
+// function ZbirKvneparnih (a, b){
+//     let suma = 0
+//     for(i=a; i<=b; i++){
+//         if(i%2 === 0) continue
+//         suma += i*i;
+//     }
+//     return suma;
+// }
+
+// console.log(ZbirKv(1,5))
+// console.log(ZbirKvneparnih(1,5))
+// console.log(ZbirKvparnih(1,5))
+
+///////////////////////////////////9.11.//////////////////////////////////////
+let n = parseInt(prompt("unesi broj n"));
+let f = 1;
+
+    for(i=1; i<=n; i++){
+        f *= i;
     }
-        break;
-}
-if(dan === d){
-    dan = 1
-    mesec ++
-}
-else{
-    dan ++
-}
-if(mesec > 12){
-    mesec = 1
-    godina++
-}
-else{
-    mesec++
-}
-console.log(dan, mesec, godina)
+
+console.log(f);
 
 
-        
