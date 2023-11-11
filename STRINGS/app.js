@@ -134,10 +134,47 @@
 // }
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////8.7.///////////////////////////////////////////////////
+// while(true){
+//     let veliko = 0;
+//     let malo = 0;
+//     let recenica = prompt("unesi recenicu")
+//     if(rececenica === "0")
+//     break
+// for(let i = 0; i < recenica.length; i++)
+// if(recenica[i] === recenica[i].toUpperCase()){
+//     veliko++;
+// }
+// else {
+//     malo++;
+// }
+// console.log(`Velika slova ${veliko} i mala slova ${malo}, broj karaktera je ${recenica.length}`)
+// }
 
+// //////////////////////8.8.////////////////////////////////
+// while(true){
+//     let slovoA = 0;
+//     let recenica = prompt("unesi recenicu")
+//     if(recenica === "0")
+//     break;
+//     for(let i = 0; i < recenica.length; i++)
+//     if(recenica[i] === "A" ){
+//         slovoA ++
+//     }
+//     console.log(`Ima ${slovoA} slova A`)
+// }
 
-
-
-
-
+//////////////////////////8.9.///////////////////////////////////
+while(true){
+    let znaci = 0;
+    let razmak = 0;
+    let rec = prompt("unesi recenicu")
+    if(rec === "0")
+    break;
+for(let i = 0; i < rec.length; i++)
+if(rec[i] === " " || rec[i] === "/" || rec[i] === ";" || rec[i] === ":" || rec[i] === "," || rec[i] === "." || rec[i] === "<" || rec[i] === ">" || rec[i] === "[" || rec[i] === "]"){
+     znaci++
+        razmak++
+}
+console.log(`Ima ${znaci} znaka i ${razmak} razmaka`);
+}
