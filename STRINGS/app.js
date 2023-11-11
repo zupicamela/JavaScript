@@ -165,16 +165,18 @@
 // }
 
 //////////////////////////8.9.///////////////////////////////////
-while(true){
-    let znaci = 0;
-    let razmak = 0;
-    let rec = prompt("unesi recenicu")
-    if(rec === "0")
-    break;
-for(let i = 0; i < rec.length; i++)
-if(rec[i] === " " || rec[i] === "/" || rec[i] === ";" || rec[i] === ":" || rec[i] === "," || rec[i] === "." || rec[i] === "<" || rec[i] === ">" || rec[i] === "[" || rec[i] === "]"){
-     znaci++
-        razmak++
-}
-console.log(`Ima ${znaci} znaka i ${razmak} razmaka`);
-}
+// while(true){
+//     let znaci = 0;
+//     let razmak = 0;
+//     let rec = prompt("unesi recenicu")
+//     if(rec === "0")
+//     break;
+// for(let i = 0; i < rec.length; i++)
+// if( rec[i] === "/" || rec[i] === ";" || rec[i] === ":" || rec[i] === "," || rec[i] === "." || rec[i] === "<" || rec[i] === ">" || rec[i] === "[" || rec[i] === "]"){
+//      znaci++
+// }
+// else if(rec[i] === " "){
+//     razmak++
+// }
+// console.log(`Ima ${znaci} znaka i ${razmak} razmaka`);
+// }
