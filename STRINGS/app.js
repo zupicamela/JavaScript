@@ -59,7 +59,7 @@
 // console.log(recenica.charAt(2));
 ////////////////////////////////////
 
-// split = 
+// split = odvaja reci od razmaka do razmaka
 // let recenica = "Ana voli Milovana";
 // let niz = []
 // for(let i = 0; i < recenica.length; i++){
@@ -158,7 +158,7 @@
 //     if(recenica === "0")
 //     break;
 //     for(let i = 0; i < recenica.length; i++)
-//     if(recenica[i] === "A" ){
+//     if(recenica[i] === "a" ){
 //         slovoA ++
 //     }
 //     console.log(`Ima ${slovoA} slova A`)
@@ -180,3 +180,72 @@
 // }
 // console.log(`Ima ${znaci} znaka i ${razmak} razmaka`);
 // }
+
+////////////////////8.12./////////////////////////////////////////////
+// let zagrada = prompt("unesi recenicu")
+// let otvorene = 0;
+// zatvorene = 0;
+
+// for(let karakter of zagrada) {
+//     if(karakter === "("){
+//         otvorene++
+//     } else if (karakter === ")") {
+//         zatvorene++
+//     }
+// }
+
+// if(zatvorene === otvorene)
+// console.log("dobro je")
+// else console.log("nije dobro")
+
+/////////////////////////////////8.13////////////////////////////////////
+// let recenica = prompt("unesi recenicu")
+// console.log(recenica.toLowerCase());
+
+/////////////////////////////8.14///////////////////////////////////////
+// let rec = prompt("unesi recenicu")
+// console.log(rec.toUpperCase());
+
+////////////////////////8.15///////////////////////////////////////
+// let recenica = prompt("unesi recenicu")
+
+// for(let i = 0; i < recenica.length; i++){
+//     console.log(recenica[i])
+//     if(i === 0){
+//        recenica[i] = recenica[i].toUpperCase()
+//     }
+//     else{
+//         recenica[i] = recenica[i].toLowerCase
+//     }
+// }
+// console.log(recenica);
+
+////////////////////////8.16///////////////////////////////
+// let input = prompt("unesi recenicu"), output = " ";
+
+// for(let i = 0; i < input.length; i++){
+//     if(input[i] === " "){
+//         if(output[output.length-1] !== " ")
+//         output += input[i]
+//         }
+//         else{
+//             output += input[i]
+//     }
+// }
+// console.log(output)
+
+/////////////////////8.17.//////////////////////////////////////
+// let input = prompt("unesi recenicu") ;
+// let inputArray = input.split(" ")
+
+// for(let word of inputArray){
+//     console.log(word)
+// }
+
+
+// console.log("nesto \n jos nesto \n jos nesto \n")
+
+// console.log("nesto \t jos nesto \t jos nesto \t")
+
+////////////////////////////////////////////////////////////
+
