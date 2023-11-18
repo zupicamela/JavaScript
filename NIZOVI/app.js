@@ -26,6 +26,6 @@
 // let niz = [[1,2,3], [4,5,6], [7,8,9]]
 // console.log(niz.flat())
 
-niz = [1,2,3,4,5,6,7,8,9]
+// niz = [1,2,3,4,5,6,7,8,9]
 
-console.log(niz.splice(3, 2, -10))
+// console.log(niz.splice(3, 2, -10))
