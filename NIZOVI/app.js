@@ -255,10 +255,164 @@
 
 // console.log(`Aritmeticka sredina je: ${suma/brojClanova}`);
 
+/////////////////////////10.8.///////////////////////////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));         PRVI NACIN
+// let niz = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz.push(broj)
+// }
+// niz = niz.filter(clan => clan  % 3 === 0)
+ 
+// let suma = niz[i].reduce((a, b) => {
+//     return a + b
+// })
+
+// console.log(`Aritmeticka sredina je: ${suma/niz.length}`);
+
+// let res = 0;                                                               DRUGI NACIN
+// let t = 0;
+// niz.forEach((clan) => {
+//     if(clan % 3 === 0){
+//         t++;
+//         res += clan;
+//     }
+// });
+
+// console.log(`Aritmeticka sredina: ${res / t}`)
+////////////////////////////////////10.9.////////////////////////////////////////////////
+// a)))))))))))))))))))))))))))))))))))))))))))
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz.push(broj)
+// }
+// let rezultatParnih = 0;
+// let rezultatNeparnih = 0;
+
+// niz.forEach((clan) =>{
+//     clan % 2 === 0 ? rezultatParnih += clan : rezultatNeparnih += clan
+    // if(clan % 2 === 0){
+    //     rezultatParnih += clan    (ovo gore je isto sto i ovo dole)
+    // }
+    // else{
+    //     rezultatNeparnih += clan
+    // }
+// })
+
+// console.log(`Zbir parnih je : ${rezultatParnih}, a neparnih je: ${rezultatNeparnih}`)
+
+// b)))))))))))))))))))))))))))))))))))))))))))))))
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz.push(broj)
+// }
+// let rezultatParnihindexa = 0;
+// let rezultatNeparnihindexa = 0;
+
+// niz.forEach((i) =>{
+//     if(i % 2 === 0){
+//         rezultatParnihindexa += i    
+//     }
+//     else{
+//         rezultatNeparnihindexa += i
+//     }
+// })
+
+// console.log(`Zbir parnih je : ${rezultatParnihindexa}, a neparnih je: ${rezultatNeparnihindexa}`)
+
+/////////////////////////////////10.11.//////////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+
+// let brojClanova2 = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz2 = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz2.push(broj)
+// }
+// console.log(niz1.concat(niz2));
+
+///////////////////////////////////10.12.///////////////////////// MAP uzima svaki clan iz datog niza i svaki se koristi posebno
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+
+// let brojClanova2 = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz2 = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz2.push(broj)
+// }
+
+// let niz3 = niz1.map((clan, i) => {
+//         return clan + niz2[i]
+//     })
+
+//     console.log(niz3)
+
+//////////////////////////////////10.14.////////////////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+
+// let brojClanova2 = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz2 = []
+
+// for(let i = 0; i < brojClanova2; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz2.push(broj)
+// }
+
+// niz2.reverse()
+// let niz3 = niz1.map((clan, i) => {
+//         return clan + niz2[i]
+//     })
+
+//     console.log(niz3);
+
+/////////////////////////////////10.15./////////////////////////////////////////// 10.16.  10.17.  10.18.  10.19.
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz.push(broj)
+// }
 
 
+// let niz2 = []
+// brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
 
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz2.push(broj)
+// }
+// let niz3 = niz.concat(niz2).filter((clan) => {
+//     if(clan % 2 === 0){
+//         return clan
+//     }
+// })
 
-
-
-
+// console.log(niz3)
