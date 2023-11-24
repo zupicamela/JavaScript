@@ -416,3 +416,78 @@
 // })
 
 // console.log(niz3)
+
+/////////////////////////////////10.16//////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+// let niz3 = []
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+
+// let brojClanova2 = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz2 = []
+
+// for(let i = 0; i < brojClanova2; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz2.push(broj)
+// }
+
+
+// for (let i = 0; i < brojClanova; i++) {
+//     if (niz1[i] < niz2[i]) {
+//         niz3.push(niz1[i]);
+//     } else if (niz1[i] > niz2[i]) {
+//         niz3.push(niz2[i]);
+//     } else {
+//         niz3.push(0);
+//     }
+// }
+// console.log(niz3);
+
+///////////////////////10.17//////////////////////////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+// let niz2 = []
+// let niz3 = []
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+
+// for (let i = 0; i < brojClanova; i++) {
+//     if (niz1[i] < 0) {
+//         niz2.push(niz1[i]);
+//     } else {
+//         niz3.push(niz1[i]);
+//     }
+// }
+
+// console.log("Negativi elementi:", niz2);
+// console.log("Pozitivni elementi i nule:", niz3);
+
+/////////////////////////////////10.18./////////////////////////////////////////
+let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+let niz1 = []
+let niz2 = []
+let AritmetickaSredina = 0;
+for(let i = 0; i < brojClanova; i++){
+    let broj = parseFloat(prompt("Unesite broj:"))
+    niz1.push(broj)
+}
+
+for (let i = 0; i < brojClanova; i++) {
+    AritmetickaSredina += niz1[i];
+    AritmetickaSredina /= brojClanova;
+}
+
+
+
+for (let i = 0; i < brojClanova; i++) {
+    if (niz1[i] > AritmetickaSredina) {
+        niz2.push(niz1[i]);
+    }
+}
+
+console.log(niz2);
