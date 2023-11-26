@@ -417,7 +417,7 @@
 
 // console.log(niz3)
 
-/////////////////////////////////10.16//////////////////////////
+/////////////////////////////////10.16////////////////////////////////////
 // let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
 // let niz1 = []
 // let niz3 = []
@@ -446,7 +446,7 @@
 // }
 // console.log(niz3);
 
-///////////////////////10.17//////////////////////////////////////////////
+//////////////////////////////10.17////////////////////////////////////////
 // let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
 // let niz1 = []
 // let niz2 = []
@@ -468,26 +468,212 @@
 // console.log("Pozitivni elementi i nule:", niz3);
 
 /////////////////////////////////10.18./////////////////////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+// let niz2 = []
+// let AritmetickaSredina = 0;
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+
+// for (let i = 0; i < brojClanova; i++) {
+//     AritmetickaSredina += niz1[i];
+// }
+// AritmetickaSredina /= brojClanova;
+
+
+
+// for (let i = 0; i < brojClanova; i++) {
+//     if (niz1[i] > AritmetickaSredina) {
+//         niz2.push(niz1[i]);
+//     }
+// }
+
+// console.log(niz2);
+
+////////////////////////////////10.16. DRUGI  NACIN///////////////////////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+
+
+// let niz2 = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz2.push(broj)
+// }
+
+// let niz3 = niz2.map((el, i) => {
+//     return el > niz[i] ? el : niz[i]
+// })
+// console.log(niz3)
+
+/////////////////////////////////////10.17. DRUGI NACIN///////////////////////////////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+// let niz2 = []
+// let niz3 = []
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+
+// for(let clan of niz){
+//     clan >= 0 ? niz2.push(clan) : niz3.push(clan)
+// }
+
+// console.log(`Niz za pozitivne ${niz2} i za negativne ${niz3}`)
+
+////////////////////////////////////10.18. DRUGI NACIN//////////////////////////////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+
+// let suma = niz1.reduce((a,b) => {
+//     return a + b
+// })
+// let AritmetickaSredina = suma / niz1.length
+
+// let niz2 = niz1.filter((clan) => {                   FILTER NE VRACA SVAKI CLAN DOK MAP VRACA SVAKI CLAN
+//      if(clan > AritmetickaSredina){
+//         return clan
+//     }
+// })
+
+// console.log(niz2)
+
+///////////////////////////////////////////////10.19.///////////////////////////////////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+// let pom = 0;
+
+// let niz2 = niz1.map((clan) => {
+//     pom += clan
+//     return pom 
+// })
+
+// console.log(niz2)
+
+////////////////////////////////////////////10.22////////////////////////////////////////////////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz1 = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz1.push(broj)
+// }
+
+// function numberOfUnique(niz1){
+// let set = new Set(niz1)
+// return set.size
+// } 
+// console.log(numberOfUnique(niz1))
+
+// drugi nacin:
+// let pom = niz1.filter((value, index, self) => {
+//     return self.indexOf(value) === index
+// });
+// console.log(pom);
+
+/////////////////////////////////////////////10.23./////////////////////////////////////////////////////// 10.24. 10.26.
+
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let main = [];
+
+// for (let i = 0; i < brojClanova; i++) {
+//   let broj = parseFloat(prompt("Unesite broj:"));
+//   main.push(broj);
+// }
+
+
+// function avgGrade(niz){
+//   let suma = niz.reduce((a,b) => {
+//     return a+b
+//   })
+
+//   return suma / niz.length
+// }
+
+// function avgGradeSuccess(niz){
+//   return avgGrade(niz.filter(clan => {
+//     if(clan > 5)
+//     return clan
+//   }))
+// }
+
+// function numOfSuccess(niz){
+//   return niz.filter(clan => {
+//     if(clan > 5)
+//     return clan
+//   }).length
+// }
+
+
+// function numOfFail(niz){
+//   return niz.filter(clan => {
+//     if(clan === 5)
+//     return clan
+//   }).length
+// }
+
+// function numOfAvgSuccess(niz){
+//   let avg = avgGrade(niz)
+//   return niz.filter((clan) => {
+//     if(clan > avg){
+//       return clan
+//     }
+//   }).length
+// }
+
+// console.log(avgGrade(main));
+// console.log(avgGradeSuccess(main));
+// console.log(numOfSuccess(main));
+// console.log(numOfFail(main));
+// console.log(numOfAvgSuccess(main));
+
+//////////////////////////////10.24.//////////////////////////////////////////////////////////
 let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
 let niz1 = []
-let niz2 = []
-let AritmetickaSredina = 0;
+
 for(let i = 0; i < brojClanova; i++){
     let broj = parseFloat(prompt("Unesite broj:"))
     niz1.push(broj)
 }
 
-for (let i = 0; i < brojClanova; i++) {
-    AritmetickaSredina += niz1[i];
-    AritmetickaSredina /= brojClanova;
+function niz(broj) {
+    if (n >= 1) {
+        niz.push(1);
+    }
+    if (n >= 2) {
+        niz.push(1);
+    }
+
+    for (let i = 2; i < n; i++) {
+        niz[i] = niz[i - 1] + niz[i - 2];
+    }
+    return niz;
 }
 
-
-
-for (let i = 0; i < brojClanova; i++) {
-    if (niz1[i] > AritmetickaSredina) {
-        niz2.push(niz1[i]);
+function niz(clan) {
+    for (let i = 0; i < niz.length; i++) {
+        console.log(niz[i]);
     }
 }
 
-console.log(niz2);
+console.log(niz)
+
+///////////////////////////////////////////10.26.///////////////////////////////////////////
