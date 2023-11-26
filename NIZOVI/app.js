@@ -645,35 +645,3 @@
 // console.log(numOfFail(main));
 // console.log(numOfAvgSuccess(main));
 
-//////////////////////////////10.24.//////////////////////////////////////////////////////////
-let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
-let niz1 = []
-
-for(let i = 0; i < brojClanova; i++){
-    let broj = parseFloat(prompt("Unesite broj:"))
-    niz1.push(broj)
-}
-
-function niz(broj) {
-    if (n >= 1) {
-        niz.push(1);
-    }
-    if (n >= 2) {
-        niz.push(1);
-    }
-
-    for (let i = 2; i < n; i++) {
-        niz[i] = niz[i - 1] + niz[i - 2];
-    }
-    return niz;
-}
-
-function niz(clan) {
-    for (let i = 0; i < niz.length; i++) {
-        console.log(niz[i]);
-    }
-}
-
-console.log(niz)
-
-///////////////////////////////////////////10.26.///////////////////////////////////////////
