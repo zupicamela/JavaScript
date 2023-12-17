@@ -645,3 +645,195 @@
 // console.log(numOfFail(main));
 // console.log(numOfAvgSuccess(main));
 
+
+////////////////////////////////10.34./////////////////// RADI
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let nizA = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     nizA.push(broj)
+// }
+// function unazadNiz(niz) {
+//     let niz1 = [];
+//     for (let i = niz.length - 1; i >= 0; i--) {
+//         niz1.push(niz[i]);
+//     }
+//     return niz1;
+// }
+
+// let nizB = unazadNiz(nizA);
+
+// console.log(nizA);
+// console.log(nizB);
+
+////////////////////////////////////////////10.35.//////////////////////// RADI
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz.push(broj)
+// }
+// console.log(niz)
+
+// function ciklicnoNesto(niz) {
+//     let prviElement = niz.shift(); 
+//     niz.push(prviElement); 
+//     return niz;
+// }
+// let nizB = ciklicnoNesto(niz);
+// console.log(nizB);
+
+///////////////////////////////////10.37.///////////////// RADI
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz = []
+
+// for(let i = 0; i < brojClanova; i++){
+//     let broj = parseFloat(prompt("Unesite broj:"))
+//     niz.push(broj)
+// }
+// console.log(niz)
+
+// function zameni(niz) {
+//     for (let i = 0; i < niz.length - 1; i += 2) {
+//         let pom = niz[i];
+//         niz[i] = niz[i + 1];
+//         niz[i + 1] = pom;
+//     }
+//     return niz;
+// }
+
+// let nizB = zameni(niz);
+// console.log(nizB);
+
+///////////////////////////////////////////10.32.////////////////////
+// aaaaaaaaaaaa
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let main = [];
+
+// for (let i = 0; i < brojClanova; i++) {
+//   let broj = parseFloat(prompt("Unesite broj:"));
+//   main.push(broj);
+// }
+
+// let broj = parseFloat(prompt("Unesite broj:"));
+
+// let trzeniBroj = main.indexOf(broj)
+// if(trzeniBroj || trzeniBroj !== -1){
+//     console.log(trzeniBroj)
+// }
+// else{
+//     console.log("ne postoji")
+// }
+
+// bbbbbbbbbbbb
+
+///////////////////////////10.34./////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let main = [];
+
+// for (let i = 0; i < brojClanova; i++) {
+//   let broj = parseFloat(prompt("Unesite broj:"));
+//   main.push(broj);
+// }
+// let niz2 = [...main].reverse
+// main.push(10)
+// console.log(main)
+// console.log(niz2)
+
+//////////////////////////10.36.///////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let main = [];
+
+// for (let i = 0; i < brojClanova; i++) {
+//   let broj = parseFloat(prompt("Unesite broj:"));
+//   main.push(broj);
+// }
+// let x = parseFloat(prompt("Unesite broj:"));
+
+//////////////////////////////////10.38.///////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let main = [];
+
+// for (let i = 0; i < brojClanova; i++) {
+//   let broj = parseFloat(prompt("Unesite broj:"));
+//   main.push(broj);
+// }
+// let niz2 = [...new Set(main)] jedan nacin
+
+// let niz = main.filter((clan, index, self) => { drugi nacin
+//     return self.indexOf(clan) === index
+// })
+
+// let niz2 = []   treci nacin
+// for(let clan of main){
+//     if(!niz2.includes(clan))
+//     niz2.push(clan)
+// }
+
+/////////////////////////10.42./////////////
+
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let main = [];
+
+// for (let i = 0; i < brojClanova; i++) {
+//   let broj = parseFloat(prompt("Unesite broj:"));
+//   main.push(broj);
+// }
+// let broj = parseFloat(prompt("Unesite broj n:"));
+// for(let i = 0; i < main.length; i++){
+//     if(main[i] > broj){
+//         main.splice(i, 0, broj)
+//         break;
+//     }
+// }
+
+// console.log(main)
+
+////////////////////////10.43.////////////
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz = [];
+
+// for (let i = 0; i < brojClanova; i++) {
+//   let broj = parseFloat(prompt("Unesite niz:"));
+//   niz.push(broj);
+// }
+
+// brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz2 = [];
+
+// for (let i = 0; i < brojClanova; i++) {
+//   let broj = parseFloat(prompt("Unesite niz:"));
+//   niz.push(broj);
+// }
+
+// let niz3 = main.concat(main2).sort((a, b) => a - b)
+
+// console.log(niz3)
+
+////////////////////////10.44./////////////////////////
+let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+let niz = [];
+
+for (let i = 0; i < brojClanova; i++) {
+  let broj = parseFloat(prompt("Unesite niz:"));
+  niz.push(broj);
+}
+let niz2 = niz.sort((a, b) => a - b)
+
+let maxIteration = 0
+let maxNumber = 0
+
+for(let i = 0; i < niz.length; i++){
+let brojac = 0
+for( let j = i; j < niz.length; j++){
+    if(niz[i] === niz[j])
+    brojac++
+}
+}
+if(brojac > maxIteration){
+    maxIteration = brojac
+    maxNumber = niz[i]
+}
+console.log(maxIteration, maxNumber);
