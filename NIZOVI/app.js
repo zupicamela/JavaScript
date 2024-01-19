@@ -813,27 +813,56 @@
 // console.log(niz3)
 
 ////////////////////////10.44./////////////////////////
-let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
-let niz = [];
+// let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+// let niz = [];
 
-for (let i = 0; i < brojClanova; i++) {
-  let broj = parseFloat(prompt("Unesite niz:"));
-  niz.push(broj);
-}
-let niz2 = niz.sort((a, b) => a - b)
+// for (let i = 0; i < brojClanova; i++) {
+//   let broj = parseFloat(prompt("Unesite niz:"));
+//   niz.push(broj);
+// }
+// let niz2 = niz.sort((a, b) => a - b)
 
-let maxIteration = 0
-let maxNumber = 0
+// let maxIteration = 0
+// let maxNumber = 0
 
-for(let i = 0; i < niz.length; i++){
-let brojac = 0
-for( let j = i; j < niz.length; j++){
-    if(niz[i] === niz[j])
-    brojac++
-}
-}
-if(brojac > maxIteration){
-    maxIteration = brojac
-    maxNumber = niz[i]
-}
-console.log(maxIteration, maxNumber);
+// for(let i = 0; i < niz.length; i++){
+// let brojac = 0
+// for( let j = i; j < niz.length; j++){
+//     if(niz[i] === niz[j])
+//     brojac++
+// }
+// }
+// if(brojac > maxIteration){
+//     maxIteration = brojac
+//     maxNumber = niz[i]
+// }
+// console.log(maxIteration, maxNumber);
+
+///////////////////10.45.///////////////////////
+// let findElement = (niz, broj) => {
+//     for(let i = 0; i < niz.length; i++){
+//       for(let j = i + 1; j < niz.length; j++){
+//         if(niz[i] + niz[j] === broj){
+//           return true
+//         }
+//       }
+//     }
+//     return false
+//   }
+  
+//   let brojClanova = parseInt(prompt("Unesite zeljeni broj clanova: "));
+//   let main = [];
+  
+//   for (let i = 0; i < brojClanova; i++) {
+//     let broj = parseFloat(prompt("Unesite broj:"));
+//     main.push(broj);
+//   }
+  
+//   let trazeniBroj = parseInt(prompt("Unesite broj koji trazite:"));
+  
+//   if(findElement(main, trazeniBroj)){
+//     console.log("Postoji");
+//   }
+//   else{
+//     console.log("Ne postoji");
+//   }
