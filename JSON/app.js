@@ -110,21 +110,24 @@
 //   getFacts();
   /////////////////////////////////////////
 
-function showFacts(data) {
-    let div = document.createElement("div");
-    div.innerHTML = data.fact;
+// function showFacts(data) {
+//     let div = document.createElement("div");
+//     div.innerHTML = data.fact;
   
-    document.body.appendChild(div);
-  }
-  async function getFacts() {
-    try {
-      let data = await fetch("https://catfact.ninja/fact?max_length=100&limit=10");
-      let res = await data.json();
-      console.log(res);
-      showFacts(res);
-    } 
-    catch (err) {
-      console.log(err);
-    }
-  }
-  getFacts();
+//     document.body.appendChild(div);
+//   }
+//   async function getFacts() {
+//     try {
+//       let data = await fetch("https://catfact.ninja/facts?max_length=100&limit=10");
+//       let res = await data.json();
+//       console.log(res);
+//       showFacts(res);
+//     } 
+//     catch (err) {
+//       console.log(err);
+//     }
+//   }
+//   getFacts();
+
+/////////////////////////////////////////////////////// 
+
