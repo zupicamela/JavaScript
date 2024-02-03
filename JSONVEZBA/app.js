@@ -1,6 +1,6 @@
-let input = document.createElement("input")
 let label = document.createElement("label")
 label.innerText = "Unesite ime pokemona"
+let input = document.createElement("input")
 let div = document.createElement("div")
 let button = document.createElement("button")
 button.innerText = "Uzmi pokemona"
